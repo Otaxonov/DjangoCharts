@@ -1,0 +1,17 @@
+{% extends 'chart/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div>
+    <canvas id="myChart"></canvas>
+</div>
+
+{% endblock content %}
+
+{% block scripts %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="{% static 'chart/js/ws.js' %}"></script>
+
+{% endblock scripts %}
